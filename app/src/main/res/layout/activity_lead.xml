@@ -26,6 +26,7 @@
             android:paddingRight="5dp">
 
             <ImageButton
+                android:id="@+id/back_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="?android:attr/actionBarSize"
                 android:background="@android:color/transparent"
@@ -112,82 +113,27 @@
             android:background="@drawable/bg_gradient_soft"
             android:rotation="180" />
 
-    </RelativeLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:padding="5dp">
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/lead_msg_cardView"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="3dp"
-            android:layout_weight="1"
-            app:cardBackgroundColor="@android:color/white"
-            app:cardCornerRadius="18dp"
-            app:cardElevation="1dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:paddingLeft="3dp"
-                android:paddingRight="3dp"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:background="?attr/selectableItemBackground"
-                    android:clickable="true"
-                    android:padding="10dp"
-                    app:srcCompat="@drawable/ic_sentiment_satisfied"
-                    app:tint="#00897B" />
-
-                <EditText
-                    android:id="@+id/text_content"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@android:color/transparent"
-                    android:hint="Write a message..."
-                    android:focusable="true"
-                    android:focusableInTouchMode="true"
-                    android:imeOptions="actionSearch"
-                    android:padding="10dp" />
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:background="?attr/selectableItemBackground"
-                    android:clickable="true"
-                    android:padding="10dp"
-                    app:srcCompat="@drawable/ic_photo_camera"
-                    app:tint="#00897B" />
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/btn_send"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="6dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="40dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="81dp"
             android:clickable="true"
-            android:gravity="center"
             android:tint="@android:color/white"
             app:backgroundTint="#00897B"
             app:elevation="1dp"
             app:fabSize="mini"
-            app:srcCompat="@drawable/ic_mic"
+            app:srcCompat="@drawable/ic_add"
             app:useCompatPadding="false" />
 
-    </LinearLayout>
+    </RelativeLayout>
+
 
     <!--bottom sheet container-->
     <FrameLayout

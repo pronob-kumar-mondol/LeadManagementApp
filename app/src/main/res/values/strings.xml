@@ -4,4 +4,81 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="whatsapp_logo">Whatsapp Logo</string>
+
+    <string-array name="project">
+
+        <item>Lead Management App</item>
+        <item>Facebook App</item>
+        <item>Marketing App</item>
+        <item>This data will come from API</item>
+        <item>Demo Items Here</item>
+
+    </string-array>
+
+    <string-array name="alert_type">
+        <item>Alert</item>
+        <item>Massage</item>
+
+    </string-array>
+
+    <string-array name="District">
+        <item>Dhaka</item>
+        <item>Faridpur</item>
+        <item>Gazipur</item>
+        <item>Gopalganj</item>
+        <item>Kishoreganj</item>
+        <item>Madaripur</item>
+        <item>Manikganj</item>
+        <item>Munshiganj</item>
+        <item>Narsingdi</item>
+        <item>Narayanganj</item>
+        <item>Netrokona</item>
+        <item>Rajbari</item>
+        <item>Shariatpur</item>
+        <item>Tangail</item>
+        <item>Bandarban</item>
+        <item>Brahmanbaria</item>
+        <item>Chandpur</item>
+        <item>Chattogram</item>
+        <item>Cumilla</item>
+        <item>Cox\'s Bazar</item>
+        <item>Feni</item>
+        <item>Khagrachari</item>
+        <item>Lakshmipur</item>
+        <item>Noakhali</item>
+        <item>Rangamati</item>
+        <item>Bagerhat</item>
+        <item>Chuadanga</item>
+        <item>Jessore</item>
+        <item>Jhenaidah</item>
+        <item>Khulna</item>
+        <item>Kushtia</item>
+        <item>Meherpur</item>
+        <item>Moulvibazar</item>
+        <item>Satkhira</item>
+        <item>Shibchar</item>
+        <item>Rajshahi</item>
+        <item>Naogaon</item>
+        <item>Chattogram</item>
+        <item>Jhalokathi</item>
+        <item>Sylhet</item>
+        <item>Sirajganj</item>
+        <item>Khulna</item>
+        <item>Comilla</item>
+        ```
+
+    </string-array>
+
+    <string-array name="Interest">
+
+        <item>20%</item>
+        <item>40%</item>
+        <item>60%</item>
+        <item>80%</item>
+        <item>100%</item>
+
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

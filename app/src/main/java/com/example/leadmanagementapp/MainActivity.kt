@@ -1,5 +1,6 @@
 package com.example.leadmanagementapp
 
+import android.content.Intent
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +9,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.leadmanagementapp.databinding.ActivityMainBinding
+import com.example.leadmanagementapp.ui.activity.AddLeadActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -35,5 +37,15 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+
+
+
+
+
+        binding.btnAdd.setOnClickListener{
+            val intent= Intent(this, AddLeadActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

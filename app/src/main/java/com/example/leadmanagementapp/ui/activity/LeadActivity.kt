@@ -18,12 +18,14 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.leadmanagementapp.AddAlertBottomSheetFragment
 import com.example.leadmanagementapp.R
 import com.example.leadmanagementapp.databinding.ActivityLeadBinding
 import com.example.leadmanagementapp.databinding.SheetFilterBinding
 import com.example.leadmanagementapp.ui.activity.LeadDetailsActivity
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
 class LeadActivity : AppCompatActivity() {
 
@@ -41,13 +43,24 @@ class LeadActivity : AppCompatActivity() {
         }
 
 
+        binding.btnSend.setOnClickListener {
+            showBottomSheetDialog()
+
+        }
+
+        binding.backBtn.setOnClickListener {
+            finish()
+        }
+
+    }
+
+    private fun showBottomSheetDialog() {
+        val bottomSheetFragment=AddAlertBottomSheetFragment()
+        bottomSheetFragment.show(supportFragmentManager,"myBottomDialogFragment")
     }
 
 
-
-
-
-    }
+}
 
 
     /**
