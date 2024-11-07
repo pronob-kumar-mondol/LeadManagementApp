@@ -48,18 +48,35 @@ class HomeFragment : Fragment(), HomeAdapter.OnItemClickListener {
         super.onViewCreated(view, savedInstanceState)
 
         val demoData= listOf(
-            DemoData(R.drawable.google_demo_img, "Google", "01700000000","Big Project","100000","Pending"),
-            DemoData(R.drawable.google_demo_img, "Google", "01700000000","Big Project","100000","Pending"),
-            DemoData(R.drawable.google_demo_img, "Google", "01700000000","Big Project","100000","Pending"),
-            DemoData(R.drawable.google_demo_img, "Google", "01700000000","Big Project","100000","Pending"),
-            DemoData(R.drawable.google_demo_img, "Google", "01700000000","Big Project","100000","Pending"),
-            DemoData(R.drawable.google_demo_img, "Google", "01700000000","Big Project","100000","Pending"),
-            DemoData(R.drawable.google_demo_img, "Google", "01700000000","Big Project","100000","Pending")
+            DemoData(R.drawable.google_demo_img, "Google", "Alert","10:45 Am"),
+            DemoData(R.drawable.google_demo_img, "Facebook", "Massage","10:45 Am"),
+            DemoData(R.drawable.google_demo_img, "Twiter", "Alert","10:45 Am"),
+            DemoData(R.drawable.google_demo_img, "Whatsapp", "Massage","10:45 Am"),
+            DemoData(R.drawable.google_demo_img, "Tiktok", "Alert","10:45 Am"),
+            DemoData(R.drawable.google_demo_img, "Skype", "Massage","10:45 Am"),
+            DemoData(R.drawable.google_demo_img, "Skype", "Massage","10:45 Am"),
+            DemoData(R.drawable.google_demo_img, "Skype", "Massage","10:45 Am"),
+            DemoData(R.drawable.google_demo_img, "Skype", "Massage","10:45 Am"),
+            DemoData(R.drawable.google_demo_img, "Skype", "Massage","10:45 Am"),
+            DemoData(R.drawable.google_demo_img, "Skype", "Massage","10:45 Am"),
+            DemoData(R.drawable.google_demo_img, "Skype", "Massage","10:45 Am"),
+            DemoData(R.drawable.google_demo_img, "Skype", "Massage","10:45 Am"),
+            DemoData(R.drawable.google_demo_img, "Skype", "Massage","10:45 Am"),
+            DemoData(R.drawable.google_demo_img, "Skype", "Massage","10:45 Am"),
+            DemoData(R.drawable.google_demo_img, "Skype", "Massage","10:45 Am"),
+            DemoData(R.drawable.google_demo_img, "Skype", "Massage","10:45 Am"),
+            DemoData(R.drawable.google_demo_img, "Skype", "Massage","10:45 Am"),
+            DemoData(R.drawable.google_demo_img, "Skype", "Massage","10:45 Am"),
+            DemoData(R.drawable.google_demo_img, "Skype", "Massage","10:45 Am"),
+            DemoData(R.drawable.google_demo_img, "Skype", "Massage","10:45 Am"),
+            DemoData(R.drawable.google_demo_img, "Redit", "Alert","10:45 Am")
         )
 
 
         binding.leadRcView.layoutManager= LinearLayoutManager(requireContext())
         binding.leadRcView.adapter= HomeAdapter(demoData,this)
+
+
 
 
     }

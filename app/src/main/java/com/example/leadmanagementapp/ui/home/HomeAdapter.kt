@@ -17,12 +17,10 @@ class HomeAdapter(
 ):RecyclerView.Adapter<HomeAdapter.ViewHolder>() {
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
-        val imageview:CircleImageView=itemView.findViewById(R.id.lead_image)
-        val name:TextView=itemView.findViewById(R.id.lead_name)
-        val mobile:TextView=itemView.findViewById(R.id.lead_number)
-        val cost:TextView=itemView.findViewById(R.id.lead_cost)
-        val lead_status:TextView=itemView.findViewById(R.id.lead_status)
-
+        val imageView:CircleImageView=itemView.findViewById(R.id.lead_image)
+        val leadName:TextView=itemView.findViewById(R.id.lead_name)
+        val lastMsg:TextView=itemView.findViewById(R.id.last_msg)
+        val time:TextView=itemView.findViewById(R.id.time)
     }
 
     interface OnItemClickListener{
@@ -39,11 +37,10 @@ class HomeAdapter(
 
     override fun onBindViewHolder(holder: HomeAdapter.ViewHolder, position: Int) {
         val currentItem=leadList[position]
-        holder.imageview.setImageResource(currentItem.image)
-        holder.name.text=currentItem.name
-        holder.mobile.text=currentItem.number
-        holder.cost.text=currentItem.install_charge
-        holder.lead_status.text=currentItem.lead_status
+        holder.imageView.setImageResource(currentItem.image)
+        holder.leadName.text=currentItem.project_name
+        holder.lastMsg.text=currentItem.last_msg
+        holder.time.text=currentItem.time
 
         holder.itemView.setOnClickListener {
             clickListener.onItemClick(currentItem)

@@ -128,8 +128,8 @@
             android:tint="@android:color/white"
             app:backgroundTint="#00897B"
             app:elevation="1dp"
-            app:fabSize="mini"
-            app:srcCompat="@drawable/ic_add"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/plus"
             app:useCompatPadding="false" />
 
     </RelativeLayout>
